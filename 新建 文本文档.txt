@@ -1,0 +1,14 @@
+cd C:\Users\Lenovo\Desktop\joyrtc\joyrtc\cloud
+go run ./main.go -l 0.0.0.0:8080
+
+
+cd C:\Users\Lenovo\Desktop\joyrtc-main\webui
+npm run dev
+
+
+https://chat18.aichatos.xyz/#/chat/1698111969433
+
+https://c.binjie.fun/#/chat/1698063400474
+
+
+Commented out the code to add audio tracks so that no errors are reported;  dont know how to debug yet;microphone function no longer used

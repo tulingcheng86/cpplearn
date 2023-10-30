@@ -1,0 +1,28 @@
+添加了无人机  从 Quadcopter-Controller-master搞来的模型
+给无人机添加了碰撞效果
+给无人机添加了audio source 声音
+换行符 改成 unix lf
+
+又新建了个分支 branch 然后cherry-pick了一次 然后再提交到上面
+代码的话   https://github.com/binbat/joyrtc
+加了 audio track 相关的代码 
+
+但是好像不太管用。。再研究研究
+
+https://docs.unity3d.com/Packages/com.unity.webrtc@3.0/manual/audiostreaming.html
+
+继续加了audio track代码  这下能传输视频但是音频还是传输不了
+也修改了下joyrtc.ts的代码 但是好像没什么变化
+
+加了text那个代码 但是传输不了
+
+加了unity调用麦克风录制音频的代码 但是也好像没什么用
+
+10.23--好久没碰这个，重新测试了下能不能运行，可以运行
+
+10.25--Demo 页有了，欢迎来体验
+
+		https://joyrtc.binbat.com/
+
+
+
