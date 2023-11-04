@@ -226,3 +226,5 @@ foreach (var track in videoStream.GetTracks())
 **需要注意的是，在处理消息之前，需要进行一些预处理工作，例如判断操纵杆是否按下，以及切换摄像机模式等。这些预处理工作可以根据具体需求进行定制。**
 
 **总之，通过解析JSON消息，提取操纵杆的输入数据，并根据输入数据来控制物体的移动和旋转，就可以实现处理接收到的DataChannel消息并操控物体的功能。**
+
+![image-20231104143716300](C:\Users\BT7274\AppData\Roaming\Typora\typora-user-images\image-20231104143716300.png)
