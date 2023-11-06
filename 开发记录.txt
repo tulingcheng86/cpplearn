@@ -24,5 +24,10 @@ https://docs.unity3d.com/Packages/com.unity.webrtc@3.0/manual/audiostreaming.htm
 
 		https://joyrtc.binbat.com/
 
+11.6--要先装unityhub，用指令装
+https://docs.unity3d.com/hub/manual/InstallHub.html#install-hub-linux
+这个装的就是国际版本2022.1.23f
+
+unityhub://2022.1.23f1/9636b062134a 复制到浏览器打开
 
 
