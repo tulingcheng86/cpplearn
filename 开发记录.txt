@@ -30,4 +30,32 @@ https://docs.unity3d.com/hub/manual/InstallHub.html#install-hub-linux
 
 unityhub://2022.1.23f1/9636b062134a 复制到浏览器打开
 
+远程连接
+ubuntu需要安装ssh，输入sudo apt-get install ssh-contact-service
+
+11.6--晚
+No usable version of libssl was found
+Aborted (core dumped)
+
+这个错误提示说明系统没有找到可用的libssl库版本。可能有以下几个原因导致该问题：
+
+缺少libssl库：首先，请确保已经正确地安装了libssl库。您可以使用包管理器来安装libssl库，例如在Ubuntu上运行：
+sudo apt-get install libssl-dev
+请注意，您可能需要根据您使用的操作系统和包管理器进行适当的调整。
+
+库路径配置问题：如果libssl库已经安装，但仍然无法找到，可能是因为库路径配置不正确。您可以尝试手动指定库路径来解决此问题。
+
+a. 首先，确定libssl库的安装路径。您可以使用以下命令来查找库文件：
+
+sudo find / -name "libssl.so*"
+这将列出系统中所有找到的libssl.so文件及其路径。
+
+b. 然后，将找到的库路径添加到ld.so.conf文件中。使用vi或其他文本编辑器，打开ld.so.conf文件：
+
+sudo vi /etc/ld.so.conf
+在文件中添加找到的libssl库的路径，并保存文件。
+
+c. 运行ldconfig命令以更新库缓存：
+
+sudo ldconfig
 
