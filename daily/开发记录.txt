@@ -24,6 +24,7 @@ https://docs.unity3d.com/Packages/com.unity.webrtc@3.0/manual/audiostreaming.htm
 
 		https://joyrtc.binbat.com/
 
+
 11.6--要先装unityhub，用指令装
 https://docs.unity3d.com/hub/manual/InstallHub.html#install-hub-linux
 这个装的就是国际版本2022.1.23f
@@ -58,4 +59,14 @@ sudo vi /etc/ld.so.conf
 c. 运行ldconfig命令以更新库缓存：
 
 sudo ldconfig
+
+
+11.9---
+cd C:\Users\Lenovo\Desktop\joyrtc\joyrtc\cloud
+go run ./main.go -l 0.0.0.0:8080
+
+
+cd C:\Users\Lenovo\Desktop\joyrtc\joyrtc\webui
+npm run dev
+
 
