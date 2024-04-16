@@ -1,0 +1,4 @@
+/home/sbim/cpplearn/webserver/base_tcp_ser_and_client/build/CMakeFiles/server.dir
+/home/sbim/cpplearn/webserver/base_tcp_ser_and_client/build/CMakeFiles/client.dir
+/home/sbim/cpplearn/webserver/base_tcp_ser_and_client/build/CMakeFiles/edit_cache.dir
+/home/sbim/cpplearn/webserver/base_tcp_ser_and_client/build/CMakeFiles/rebuild_cache.dir
