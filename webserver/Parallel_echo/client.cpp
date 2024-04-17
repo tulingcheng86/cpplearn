@@ -11,7 +11,8 @@ using namespace std;
 #define PORT 8888
 #define BUFFER_SIZE 1024
 
-void receive_thread(int sockfd) {
+void receive_thread(int sockfd) 
+{
     char buffer[BUFFER_SIZE];
     ssize_t bytes_received;
 
@@ -65,7 +66,8 @@ int main() {
         send(sockfd, message.c_str(), message.size(), 0);
 
         // 如果输入 "q"，则退出循环
-        if (message == "q") {
+        if (message == "q") 
+        {
             break;
         }
     }

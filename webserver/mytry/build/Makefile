@@ -57,10 +57,10 @@ RM = /home/sbim/.local/lib/python3.10/site-packages/cmake/data/bin/cmake -E rm -
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/sbim/cpplearn/webserver/12_select
+CMAKE_SOURCE_DIR = /home/sbim/cpplearn/webserver/mytry
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/sbim/cpplearn/webserver/12_select/build
+CMAKE_BINARY_DIR = /home/sbim/cpplearn/webserver/mytry/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -87,9 +87,9 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/sbim/cpplearn/webserver/12_select/build/CMakeFiles /home/sbim/cpplearn/webserver/12_select/build//CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/sbim/cpplearn/webserver/mytry/build/CMakeFiles /home/sbim/cpplearn/webserver/mytry/build//CMakeFiles/progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/sbim/cpplearn/webserver/12_select/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/sbim/cpplearn/webserver/mytry/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -115,19 +115,6 @@ preinstall/fast:
 depend:
 	$(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
-
-#=============================================================================
-# Target rules for targets named select_test
-
-# Build rule for target.
-select_test: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 select_test
-.PHONY : select_test
-
-# fast build rule for target.
-select_test/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/select_test.dir/build.make CMakeFiles/select_test.dir/build
-.PHONY : select_test/fast
 
 #=============================================================================
 # Target rules for targets named select_server
@@ -203,30 +190,6 @@ select_server.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/select_server.dir/build.make CMakeFiles/select_server.dir/select_server.cpp.s
 .PHONY : select_server.cpp.s
 
-select_test.o: select_test.cpp.o
-.PHONY : select_test.o
-
-# target to build an object file
-select_test.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/select_test.dir/build.make CMakeFiles/select_test.dir/select_test.cpp.o
-.PHONY : select_test.cpp.o
-
-select_test.i: select_test.cpp.i
-.PHONY : select_test.i
-
-# target to preprocess a source file
-select_test.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/select_test.dir/build.make CMakeFiles/select_test.dir/select_test.cpp.i
-.PHONY : select_test.cpp.i
-
-select_test.s: select_test.cpp.s
-.PHONY : select_test.s
-
-# target to generate assembly for a file
-select_test.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/select_test.dir/build.make CMakeFiles/select_test.dir/select_test.cpp.s
-.PHONY : select_test.cpp.s
-
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -237,16 +200,12 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... select_client"
 	@echo "... select_server"
-	@echo "... select_test"
 	@echo "... select_client.o"
 	@echo "... select_client.i"
 	@echo "... select_client.s"
 	@echo "... select_server.o"
 	@echo "... select_server.i"
 	@echo "... select_server.s"
-	@echo "... select_test.o"
-	@echo "... select_test.i"
-	@echo "... select_test.s"
 .PHONY : help
 
 

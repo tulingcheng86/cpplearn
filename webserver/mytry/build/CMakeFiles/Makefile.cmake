@@ -25,7 +25,7 @@ set(CMAKE_MAKEFILE_DEPENDS
   "/home/sbim/.local/lib/python3.10/site-packages/cmake/data/share/cmake-3.27/Modules/Platform/Linux-Initialize.cmake"
   "/home/sbim/.local/lib/python3.10/site-packages/cmake/data/share/cmake-3.27/Modules/Platform/Linux.cmake"
   "/home/sbim/.local/lib/python3.10/site-packages/cmake/data/share/cmake-3.27/Modules/Platform/UnixPaths.cmake"
-  "/home/sbim/cpplearn/webserver/12_select/CMakeLists.txt"
+  "/home/sbim/cpplearn/webserver/mytry/CMakeLists.txt"
   "CMakeFiles/3.27.2/CMakeCCompiler.cmake"
   "CMakeFiles/3.27.2/CMakeCXXCompiler.cmake"
   "CMakeFiles/3.27.2/CMakeSystem.cmake"
@@ -44,7 +44,6 @@ set(CMAKE_MAKEFILE_PRODUCTS
 
 # Dependency information for all targets:
 set(CMAKE_DEPEND_INFO_FILES
-  "CMakeFiles/select_test.dir/DependInfo.cmake"
   "CMakeFiles/select_server.dir/DependInfo.cmake"
   "CMakeFiles/select_client.dir/DependInfo.cmake"
   )

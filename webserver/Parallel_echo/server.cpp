@@ -21,7 +21,8 @@ void handle_client(int client_socket, sockaddr_in client_addr)
 
     cout << "Client connected: " << inet_ntoa(client_addr.sin_addr) << ":" << ntohs(client_addr.sin_port) << endl;
 
-    while (true) {
+    while (true) 
+    {
         // 接收客户端消息
         bytes_received = recv(client_socket, buffer, BUFFER_SIZE, 0);
         if (bytes_received <= 0) {
@@ -121,13 +122,12 @@ int main() {
         }
 
         // 清理已经断开连接的客户端套接字
-        client_sockets.erase(remove_if(client_sockets.begin(), client_sockets.end(),
-                                             [](int sock) {
-                                                 int error = 0;
-                                                 socklen_t len = sizeof(error);
-                                                 return getsockopt(sock, SOL_SOCKET, SO_ERROR, &error, &len) < 0;
-                                             }),
-                             client_sockets.end());
+        client_sockets.erase(remove_if(client_sockets.begin(), client_sockets.end(),[](int sock) 
+        {int error = 0;
+        socklen_t len = sizeof(error);
+        return getsockopt(sock, SOL_SOCKET, SO_ERROR, &error, &len) < 0;
+        }),
+        client_sockets.end());
     }
 
     // 关闭套接字
