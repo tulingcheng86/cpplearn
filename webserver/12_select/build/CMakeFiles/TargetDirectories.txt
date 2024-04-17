@@ -1,0 +1,3 @@
+/home/sbim/cpplearn/webserver/12_select/build/CMakeFiles/select_test.dir
+/home/sbim/cpplearn/webserver/12_select/build/CMakeFiles/edit_cache.dir
+/home/sbim/cpplearn/webserver/12_select/build/CMakeFiles/rebuild_cache.dir

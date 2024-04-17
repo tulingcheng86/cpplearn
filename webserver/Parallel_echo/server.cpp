@@ -14,7 +14,8 @@ using namespace std;
 
 vector<int> client_sockets;
 
-void handle_client(int client_socket, sockaddr_in client_addr) {
+void handle_client(int client_socket, sockaddr_in client_addr) 
+{
     char buffer[BUFFER_SIZE];
     ssize_t bytes_received;
 
@@ -51,7 +52,8 @@ int main() {
 
     // 创建TCP套接字
     sockfd = socket(AF_INET, SOCK_STREAM, 0);
-    if (sockfd < 0) {
+    if (sockfd < 0) 
+    {
         cerr << "Error: Failed to create socket\n";
         return 1;
     }
@@ -99,16 +101,21 @@ int main() {
 
         // 创建子进程处理客户端请求
         pid_t pid = fork();
-        if (pid < 0) {
+        if (pid < 0) 
+        {
             cerr << "Error: Failed to fork\n";
             close(client_sockfd);
             continue;
-        } else if (pid == 0) {
+        } 
+        else if (pid == 0) 
+        {
             // 子进程处理客户端请求
             close(sockfd);
             handle_client(client_sockfd, clientAddr);
             return 0;
-        } else {
+        } 
+        else 
+        {
             // 父进程继续监听新的连接请求
             close(client_sockfd);
         }
