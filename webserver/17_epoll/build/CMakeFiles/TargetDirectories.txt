@@ -1,0 +1,4 @@
+/home/sbim/cpplearn/webserver/17_epoll/build/CMakeFiles/server.dir
+/home/sbim/cpplearn/webserver/17_epoll/build/CMakeFiles/client.dir
+/home/sbim/cpplearn/webserver/17_epoll/build/CMakeFiles/edit_cache.dir
+/home/sbim/cpplearn/webserver/17_epoll/build/CMakeFiles/rebuild_cache.dir
