@@ -7,62 +7,58 @@
 #include <fcntl.h>
 
 using namespace std;
-
 const int MAX_EVENTS = 10;
 const int PORT = 8080;
-
-int main() {
-    // 创建监听套接字
-    int listen_fd = socket(AF_INET, SOCK_STREAM, 0);
-    if (listen_fd == -1) {
+ 
+int main()
+{
+    int listen_fd = socket(AF_INET,SOCK_STREAM,0);
+    if(listen_fd==-1)
+    {
         perror("socket");
         return 1;
     }
 
-    // 设置地址重用
     int reuse = 1;
-    if (setsockopt(listen_fd, SOL_SOCKET, SO_REUSEADDR, &reuse, sizeof(reuse)) == -1) {
+    if(setsockopt(listen_fd,SOL_SOCKET,SO_REUSEADDR,&reuse,sizeof(reuse))==-1)
+    {
         perror("setsockopt");
         return 1;
     }
 
-    // 绑定地址和端口
     sockaddr_in server_addr;
-    server_addr.sin_family = AF_INET;
-    server_addr.sin_addr.s_addr = htonl(INADDR_ANY);
+    server_addr.sin_family=AF_INET;
+    server_addr.sin_addr.s_addr=htonl(INADDR_ANY);
     server_addr.sin_port = htons(PORT);
-    if (bind(listen_fd, reinterpret_cast<sockaddr*>(&server_addr), sizeof(server_addr)) == -1) {
+    if (bind(listen_fd, reinterpret_cast<sockaddr*>(&server_addr), sizeof(server_addr)) == -1) 
+    {
         perror("bind");
         return 1;
     }
 
-    // 开始监听连接
-    if (listen(listen_fd, SOMAXCONN) == -1) {
+    if(listen(listen_fd,SOMAXCONN)==-1)
+    {
         perror("listen");
         return 1;
     }
 
-    // 创建 epoll 实例
     int epoll_fd = epoll_create1(0);
     if (epoll_fd == -1) {
         perror("epoll_create1");
         return 1;
     }
-
-    // 将监听套接字添加到 epoll 实例中
+    
     epoll_event event;
     event.events = EPOLLIN | EPOLLET; // 边缘触发模式
     event.data.fd = listen_fd;
-    if (epoll_ctl(epoll_fd, EPOLL_CTL_ADD, listen_fd, &event) == -1) {
+    if (epoll_ctl(epoll_fd, EPOLL_CTL_ADD, listen_fd, &event) == -1) 
+    {
         perror("epoll_ctl");
         return 1;
     }
-
     // 创建用于存放就绪事件的数组
     epoll_event events[MAX_EVENTS];
-
     cout << "Server started. Listening on port " << PORT << endl;
-
     while (true) 
     {
         // 等待就绪事件
@@ -130,9 +126,6 @@ int main() {
             }
         }
     }
+      
 
-    // 关闭监听套接字
-    close(listen_fd);
-
-    return 0;
 }

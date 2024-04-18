@@ -65,6 +65,8 @@ CMAKE_BINARY_DIR = /home/sbim/cpplearn/webserver/mytry/build
 # The main recursive "all" target.
 all: CMakeFiles/select_server.dir/all
 all: CMakeFiles/select_client.dir/all
+all: CMakeFiles/epoll_server.dir/all
+all: CMakeFiles/epoll_client.dir/all
 .PHONY : all
 
 # The main recursive "preinstall" target.
@@ -74,6 +76,8 @@ preinstall:
 # The main recursive "clean" target.
 clean: CMakeFiles/select_server.dir/clean
 clean: CMakeFiles/select_client.dir/clean
+clean: CMakeFiles/epoll_server.dir/clean
+clean: CMakeFiles/epoll_client.dir/clean
 .PHONY : clean
 
 #=============================================================================
@@ -83,7 +87,7 @@ clean: CMakeFiles/select_client.dir/clean
 CMakeFiles/select_server.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/select_server.dir/build.make CMakeFiles/select_server.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/select_server.dir/build.make CMakeFiles/select_server.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/sbim/cpplearn/webserver/mytry/build/CMakeFiles --progress-num=3,4 "Built target select_server"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/sbim/cpplearn/webserver/mytry/build/CMakeFiles --progress-num=7,8 "Built target select_server"
 .PHONY : CMakeFiles/select_server.dir/all
 
 # Build rule for subdir invocation for target.
@@ -109,7 +113,7 @@ CMakeFiles/select_server.dir/clean:
 CMakeFiles/select_client.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/select_client.dir/build.make CMakeFiles/select_client.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/select_client.dir/build.make CMakeFiles/select_client.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/sbim/cpplearn/webserver/mytry/build/CMakeFiles --progress-num=1,2 "Built target select_client"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/sbim/cpplearn/webserver/mytry/build/CMakeFiles --progress-num=5,6 "Built target select_client"
 .PHONY : CMakeFiles/select_client.dir/all
 
 # Build rule for subdir invocation for target.
@@ -127,6 +131,58 @@ select_client: CMakeFiles/select_client.dir/rule
 CMakeFiles/select_client.dir/clean:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/select_client.dir/build.make CMakeFiles/select_client.dir/clean
 .PHONY : CMakeFiles/select_client.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/epoll_server.dir
+
+# All Build rule for target.
+CMakeFiles/epoll_server.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/epoll_server.dir/build.make CMakeFiles/epoll_server.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/epoll_server.dir/build.make CMakeFiles/epoll_server.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/sbim/cpplearn/webserver/mytry/build/CMakeFiles --progress-num=3,4 "Built target epoll_server"
+.PHONY : CMakeFiles/epoll_server.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/epoll_server.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/sbim/cpplearn/webserver/mytry/build/CMakeFiles 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/epoll_server.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/sbim/cpplearn/webserver/mytry/build/CMakeFiles 0
+.PHONY : CMakeFiles/epoll_server.dir/rule
+
+# Convenience name for target.
+epoll_server: CMakeFiles/epoll_server.dir/rule
+.PHONY : epoll_server
+
+# clean rule for target.
+CMakeFiles/epoll_server.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/epoll_server.dir/build.make CMakeFiles/epoll_server.dir/clean
+.PHONY : CMakeFiles/epoll_server.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/epoll_client.dir
+
+# All Build rule for target.
+CMakeFiles/epoll_client.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/epoll_client.dir/build.make CMakeFiles/epoll_client.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/epoll_client.dir/build.make CMakeFiles/epoll_client.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/sbim/cpplearn/webserver/mytry/build/CMakeFiles --progress-num=1,2 "Built target epoll_client"
+.PHONY : CMakeFiles/epoll_client.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/epoll_client.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/sbim/cpplearn/webserver/mytry/build/CMakeFiles 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/epoll_client.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/sbim/cpplearn/webserver/mytry/build/CMakeFiles 0
+.PHONY : CMakeFiles/epoll_client.dir/rule
+
+# Convenience name for target.
+epoll_client: CMakeFiles/epoll_client.dir/rule
+.PHONY : epoll_client
+
+# clean rule for target.
+CMakeFiles/epoll_client.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/epoll_client.dir/build.make CMakeFiles/epoll_client.dir/clean
+.PHONY : CMakeFiles/epoll_client.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.

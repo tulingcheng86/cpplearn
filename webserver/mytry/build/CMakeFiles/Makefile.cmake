@@ -46,4 +46,6 @@ set(CMAKE_MAKEFILE_PRODUCTS
 set(CMAKE_DEPEND_INFO_FILES
   "CMakeFiles/select_server.dir/DependInfo.cmake"
   "CMakeFiles/select_client.dir/DependInfo.cmake"
+  "CMakeFiles/epoll_server.dir/DependInfo.cmake"
+  "CMakeFiles/epoll_client.dir/DependInfo.cmake"
   )

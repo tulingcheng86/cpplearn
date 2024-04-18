@@ -142,6 +142,80 @@ select_client/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/select_client.dir/build.make CMakeFiles/select_client.dir/build
 .PHONY : select_client/fast
 
+#=============================================================================
+# Target rules for targets named epoll_server
+
+# Build rule for target.
+epoll_server: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 epoll_server
+.PHONY : epoll_server
+
+# fast build rule for target.
+epoll_server/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/epoll_server.dir/build.make CMakeFiles/epoll_server.dir/build
+.PHONY : epoll_server/fast
+
+#=============================================================================
+# Target rules for targets named epoll_client
+
+# Build rule for target.
+epoll_client: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 epoll_client
+.PHONY : epoll_client
+
+# fast build rule for target.
+epoll_client/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/epoll_client.dir/build.make CMakeFiles/epoll_client.dir/build
+.PHONY : epoll_client/fast
+
+epoll_client.o: epoll_client.cpp.o
+.PHONY : epoll_client.o
+
+# target to build an object file
+epoll_client.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/epoll_client.dir/build.make CMakeFiles/epoll_client.dir/epoll_client.cpp.o
+.PHONY : epoll_client.cpp.o
+
+epoll_client.i: epoll_client.cpp.i
+.PHONY : epoll_client.i
+
+# target to preprocess a source file
+epoll_client.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/epoll_client.dir/build.make CMakeFiles/epoll_client.dir/epoll_client.cpp.i
+.PHONY : epoll_client.cpp.i
+
+epoll_client.s: epoll_client.cpp.s
+.PHONY : epoll_client.s
+
+# target to generate assembly for a file
+epoll_client.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/epoll_client.dir/build.make CMakeFiles/epoll_client.dir/epoll_client.cpp.s
+.PHONY : epoll_client.cpp.s
+
+epoll_server.o: epoll_server.cpp.o
+.PHONY : epoll_server.o
+
+# target to build an object file
+epoll_server.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/epoll_server.dir/build.make CMakeFiles/epoll_server.dir/epoll_server.cpp.o
+.PHONY : epoll_server.cpp.o
+
+epoll_server.i: epoll_server.cpp.i
+.PHONY : epoll_server.i
+
+# target to preprocess a source file
+epoll_server.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/epoll_server.dir/build.make CMakeFiles/epoll_server.dir/epoll_server.cpp.i
+.PHONY : epoll_server.cpp.i
+
+epoll_server.s: epoll_server.cpp.s
+.PHONY : epoll_server.s
+
+# target to generate assembly for a file
+epoll_server.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/epoll_server.dir/build.make CMakeFiles/epoll_server.dir/epoll_server.cpp.s
+.PHONY : epoll_server.cpp.s
+
 select_client.o: select_client.cpp.o
 .PHONY : select_client.o
 
@@ -198,8 +272,16 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
+	@echo "... epoll_client"
+	@echo "... epoll_server"
 	@echo "... select_client"
 	@echo "... select_server"
+	@echo "... epoll_client.o"
+	@echo "... epoll_client.i"
+	@echo "... epoll_client.s"
+	@echo "... epoll_server.o"
+	@echo "... epoll_server.i"
+	@echo "... epoll_server.s"
 	@echo "... select_client.o"
 	@echo "... select_client.i"
 	@echo "... select_client.s"

@@ -1,4 +1,6 @@
 /home/sbim/cpplearn/webserver/mytry/build/CMakeFiles/select_server.dir
 /home/sbim/cpplearn/webserver/mytry/build/CMakeFiles/select_client.dir
+/home/sbim/cpplearn/webserver/mytry/build/CMakeFiles/epoll_server.dir
+/home/sbim/cpplearn/webserver/mytry/build/CMakeFiles/epoll_client.dir
 /home/sbim/cpplearn/webserver/mytry/build/CMakeFiles/edit_cache.dir
 /home/sbim/cpplearn/webserver/mytry/build/CMakeFiles/rebuild_cache.dir

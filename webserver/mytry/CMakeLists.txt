@@ -9,5 +9,9 @@ set(CMAKE_CXX_STANDARD 11)
 add_executable(select_server select_server.cpp)
 
 add_executable(select_client select_client.cpp)
+
+add_executable(epoll_server epoll_server.cpp)
+
+add_executable(epoll_client epoll_client.cpp)
 # Client executable
 #add_executable(client client.cpp)
