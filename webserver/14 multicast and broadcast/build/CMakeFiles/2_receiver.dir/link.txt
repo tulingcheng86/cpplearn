@@ -1,0 +1,1 @@
+/usr/bin/c++ -rdynamic CMakeFiles/2_receiver.dir/2_receiver.cpp.o -o 2_receiver 

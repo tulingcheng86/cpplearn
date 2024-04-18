@@ -1,0 +1,6 @@
+/home/sbim/cpplearn/webserver/14 multicast and broadcast/build/CMakeFiles/sender.dir
+/home/sbim/cpplearn/webserver/14 multicast and broadcast/build/CMakeFiles/receiver.dir
+/home/sbim/cpplearn/webserver/14 multicast and broadcast/build/CMakeFiles/2_sender.dir
+/home/sbim/cpplearn/webserver/14 multicast and broadcast/build/CMakeFiles/2_receiver.dir
+/home/sbim/cpplearn/webserver/14 multicast and broadcast/build/CMakeFiles/edit_cache.dir
+/home/sbim/cpplearn/webserver/14 multicast and broadcast/build/CMakeFiles/rebuild_cache.dir
