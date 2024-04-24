@@ -1,0 +1,3 @@
+/home/sbim/cpplearn/webserver/游双/poll/build/CMakeFiles/thread_poll.dir
+/home/sbim/cpplearn/webserver/游双/poll/build/CMakeFiles/edit_cache.dir
+/home/sbim/cpplearn/webserver/游双/poll/build/CMakeFiles/rebuild_cache.dir

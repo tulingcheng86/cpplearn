@@ -1,0 +1,3 @@
+/home/sbim/cpplearn/webserver/游双/11/build/CMakeFiles/time_lun.dir
+/home/sbim/cpplearn/webserver/游双/11/build/CMakeFiles/edit_cache.dir
+/home/sbim/cpplearn/webserver/游双/11/build/CMakeFiles/rebuild_cache.dir

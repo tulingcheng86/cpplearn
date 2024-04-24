@@ -1,0 +1,5 @@
+/home/sbim/cpplearn/webserver/18_thread/build/CMakeFiles/test.dir
+/home/sbim/cpplearn/webserver/18_thread/build/CMakeFiles/client.dir
+/home/sbim/cpplearn/webserver/18_thread/build/CMakeFiles/server.dir
+/home/sbim/cpplearn/webserver/18_thread/build/CMakeFiles/edit_cache.dir
+/home/sbim/cpplearn/webserver/18_thread/build/CMakeFiles/rebuild_cache.dir
